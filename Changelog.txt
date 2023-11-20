@@ -1,0 +1,31 @@
+Plantilla de restaurante 
+
+V1.0
+26/6/2023
+diseño principal con algundos detalles visuales
+
+cosas a mejorar:
+
+-agregar mas menus con el mismo estilo que el index.html
+-pulir animaciones y datos
+-arreglar el header ya que es una imagen
+
+
+v1.1 (7megas)
+28/6/2023
+-Se pulieron las animaciones
+-Se agrego un menu de reserva que falta por pulir
+- se arreglo el bug de el logo en sobre nosotros
+
+cosas a mejorar:
+-pulir menu de reserva
+-agregar los ingredientes de las hamburguesas detras de los menu de la hamburguesas
+
+v1.2 (4megas)
+2/7/2023
+-se agrego un menu animadoo de las cosas
+-se agrego un menu de reservas
+-errores menores corregidos
+
+-cosas a solucionar
+-optimizar imagenes para que pese menos la pagina (7megas)

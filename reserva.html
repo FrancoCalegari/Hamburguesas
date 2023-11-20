@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante de Comida</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+
+<body>
+    <header>
+        <nav>
+            <img class="Logo-img" src="Imagenes/LogoHamburguesas-removebg-preview.png" alt="LogoHamburguesas">
+            <ul class="Menu-itemss"> <!--Esta aparte es el menu -->
+                <li><a href="/Index.html">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Reserva-->
+<div class="conteiner_reserva">
+    <form action="procesar_reserva.php" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+  
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" required>
+  
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora" required>
+  
+        <label for="cantidad">Cantidad de personas:</label>
+        <input type="number" id="cantidad" name="cantidad" min="1" required>
+  
+        <input type="submit" value="Reservar">
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
+    <footer> <!-- simple futter -->
+        <div class="container" id="contacto">
+            <p>&copy; 2023 BurgerTM. Todos los derechos reservados para Franco Calegari.</p>
+            <p><a href="Changelog.txt">V1.2</a></p>
+            <div class="RSS">
+                <a href="https://www.instagram.com/tucuenta" target="_blank"><img src="Imagenes/footer/Instagram.png" alt="Instagram"></a>
+                <a href="https://twitter.com/tucuenta" target="_blank"><img src="Imagenes/footer/twitter.png" alt="Twitter"></a>
+                <a href="https://www.facebook.com/tucuenta" target="_blank"><img src="Imagenes/footer/Facebook.png" alt="Facebook"></a>
+                <a href="mailto:info@tudominio.com"><img src="Imagenes/footer/email.png" alt="Correo"></a>
+            </div>
+
+           
+           
+        </div>
+    </footer>
+</body>
+
+
+</html>
