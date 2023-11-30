@@ -5,16 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante de Comida</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head> 
 
 <body>
+  <img class="headerimg" src="./Imagenes/headerBackgorund.png" alt="">
     <header>
+      
         <nav>
-            <a href="#"><img class="Logo-img" src="Imagenes/LogoHamburguesas-removebg-preview.png" alt="LogoHamburguesas"></a>
+            <a href="#"><img class="Logo-img" src="./Imagenes/LogoHamburguesas-removebg-preview.png" alt="LogoHamburguesas"></a>
             <ul class="Menu-itemss"> <!--Esta aparte es el menu -->
                 <li><a href="#">Inicio</a></li>
-                <li><a href="menu.html">Menú</a></li>
+                <li><a href="./menu.html">Menú</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
@@ -24,10 +26,44 @@
         <div class="hero-content"><!-- esta parte es la descripcion -->
             <h1>Bienvenido a nuestro Restaurante</h1>
             <p>Disfruta de una deliciosa comida en un ambiente acogedor.</p>
-            <a href="reserva.html" class="btn" target="">Reservar mesa</a>
+            <a href="./reserva.html" class="btn" target="">Reservar mesa</a>
             
         </div>
-        <img class="hamburguesa" src="Imagenes/hamburguesamm.png" alt="hamburguesapng">
+        <section class="gallery-container">
+          <div class="gallery-wrapper" id="galleryWrapper">
+            <div class="gallery-item">
+              <img src="./Imagenes/MenuHamburguesas/bigmac.png" alt="Imagen 1">
+            </div>
+            <div class="gallery-item">
+              <img src="./Imagenes/MenuHamburguesas/Chedar.png" alt="Imagen 2">
+            </div>
+            <div class="gallery-item">
+              <img src="./Imagenes/MenuHamburguesas/Cuarto_de_libra.png" alt="Imagen 3">
+            </div>
+            <div class="gallery-item">
+              <img src="./Imagenes/MenuHamburguesas/GrandTeastyDoble.png" alt="Imagen 4">
+            </div>
+          </div>
+        </section>
+        <script>
+          const galleryWrapper = document.getElementById('galleryWrapper');
+      
+          function shiftGallery() {
+            const firstItem = galleryWrapper.firstElementChild;
+            galleryWrapper.style.transition = 'transform 0.8s ease-in-out, filter 0.8s ease-in-out';
+            galleryWrapper.style.transform = 'translateX(' + (-firstItem.offsetWidth) + 'px)';
+            galleryWrapper.style.filter = 'blur(2px)';
+            
+            setTimeout(() => {
+              galleryWrapper.appendChild(firstItem);
+              galleryWrapper.style.transition = 'none';
+              galleryWrapper.style.transform = 'translateX(0)';
+              galleryWrapper.style.filter = 'blur(0)';
+            }, 800);
+          }
+      
+          setInterval(shiftGallery, 5000); // Cambia de imagen cada 5 segundos
+        </script>
     </section>
 
     <section id="about">
@@ -36,11 +72,12 @@
             <div class="space1">
                 <h2>Sobre Nosotros</h2><!-- Sobre nosotros section -->
                 <p>¡Bienvenidos a nuestra deliciosa historia! En el corazón de la ciudad, se encuentra nuestro apasionado rincón de hamburguesas, un lugar donde los sueños más sabrosos se hacen realidad. Permítenos presentarte a nuestro vibrante equipo y compartir contigo nuestra pasión por la comida.
-
-                    En nuestro local de hamburguesas, nos esforzamos por ofrecerte una experiencia gastronómica única que te haga salivar de antemano. Nuestro objetivo es despertar tus sentidos y conquistar tu paladar con cada bocado.</p>
+                  En nuestro local de hamburguesas, nos esforzamos por ofrecerte una experiencia gastronómica 
+                  única que te haga salivar de antemano. Nuestro objetivo es despertar tus sentidos y conquistar
+                   tu paladar con cada bocado.</p>
             </div>
         
-            <img class="logox2" src="Imagenes/LogoHamburguesas-removebg-preview.png" alt="Imagen 1">
+            <img class="logox2" src="./Imagenes/LogoHamburguesas-removebg-preview.png" alt="Imagen 1">
 
         </div>
 
@@ -68,7 +105,7 @@
 
                   <div class="front">
                     <h3>Cheddar Burger</h3>
-                    <img src="Imagenes/MenuHamburguesas/Chedar.png" alt="hamburguesaChedar">
+                    <img src="./Imagenes/MenuHamburguesas/Chedar.png" alt="hamburguesaChedar">
                     <p>Descripción de Cheddar Supreme Burger.</p>
                     <p>Precio: <precio class="price">$2300</precio></p>
                     
@@ -92,7 +129,7 @@
 
                   <div class="front">
                     <h3>BigMac</h3>
-                    <img src="Imagenes/MenuHamburguesas/bigmac.png" alt="Bigmac">
+                    <img src="./Imagenes/MenuHamburguesas/bigmac.png" alt="Bigmac">
                     <p>Descripción de Bigmac.</p>
                     <p>Precio: <precio class="price">$2300</precio></p>
                     
@@ -115,7 +152,7 @@
 
                   <div class="front">
                     <h3>Cuarto de libra</h3>
-                    <img src="Imagenes/MenuHamburguesas/Cuarto_de_libra.png" alt="cuarto de libra">
+                    <img src="./Imagenes/MenuHamburguesas/Cuarto_de_libra.png" alt="cuarto de libra">
                     <p>Descripción de Cuarto de libra.</p>
                     <p>Precio: <precio class="price">$2300</precio></p>
                     
@@ -138,7 +175,7 @@
 
                   <div class="front">
                     <h3>MCnifica</h3>
-                    <img src="Imagenes/MenuHamburguesas/MCnifica.png" alt="MCnifica">
+                    <img src="./Imagenes/MenuHamburguesas/MCnifica.png" alt="MCnifica">
                     <p>Descripción de MCnifica.</p>
                     <p>Precio: <precio class="price">$2300</precio></p>
                     
@@ -162,7 +199,7 @@
 
                   <div class="front">
                     <h3>Cheddar Burger</h3>
-                    <img src="Imagenes/MenuHamburguesas/GrandTeastyDoble.png" alt="GrandTeastyDoble">
+                    <img src="./Imagenes/MenuHamburguesas/GrandTeastyDoble.png" alt="GrandTeastyDoble">
                     <p>Descripción de GrandTeastyDoble.</p>
                     <p>Precio: <precio class="price">$2300</precio></p>
                     
@@ -185,7 +222,7 @@
 
                   <div class="front">
                     <h3>Cheddar Burger</h3>
-                    <img src="Imagenes/MenuHamburguesas/GrandTeastyTriple.png" alt="GrandTeastyTriple">
+                    <img src="./Imagenes/MenuHamburguesas/GrandTeastyTriple.png" alt="GrandTeastyTriple">
                     <p>Descripción de GrandTeastyTriple.</p>
                     <p>Precio: <precio class="price">$2300</precio></p>
                     
@@ -204,12 +241,12 @@
     <footer> <!-- simple futter -->
         <div class="container" id="contacto">
             <p>&copy; 2023 BurgerTM. Todos los derechos reservados para Franco Calegari.</p>
-            <p><a href="Changelog.txt">V1.2</a></p>
+            <p><a href="Changelog.txt">V1.3</a></p>
             <div class="RSS">
-                <a href="https://www.instagram.com/tucuenta" target="_blank"><img src="Imagenes/footer/Instagram.png" alt="Instagram"></a>
-                <a href="https://twitter.com/tucuenta" target="_blank"><img src="Imagenes/footer/twitter.png" alt="Twitter"></a>
-                <a href="https://www.facebook.com/tucuenta" target="_blank"><img src="Imagenes/footer/Facebook.png" alt="Facebook"></a>
-                <a href="mailto:info@tudominio.com"><img src="Imagenes/footer/email.png" alt="Correo"></a>
+                <a href="https://www.instagram.com/tucuenta" target="_blank"><img src="./Imagenes/footer/Instagram.png" alt="Instagram"></a>
+                <a href="https://twitter.com/tucuenta" target="_blank"><img src="./Imagenes/footer/twitter.png" alt="Twitter"></a>
+                <a href="https://www.facebook.com/tucuenta" target="_blank"><img src="./Imagenes/footer/Facebook.png" alt="Facebook"></a>
+                <a href="mailto:info@tudominio.com"><img src="./Imagenes/footer/email.png" alt="Correo"></a>
             </div>
            
         </div>

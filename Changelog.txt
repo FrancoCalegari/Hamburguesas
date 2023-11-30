@@ -29,3 +29,9 @@ v1.2 (4megas)
 
 -cosas a solucionar
 -optimizar imagenes para que pese menos la pagina (7megas)
+
+v1.3
+
+-se arreglo los bug visuales y se implementaron nuevas tecnias
+
+-cosas que solucionar es pasar todas las imagenes a webp
