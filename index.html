@@ -26,7 +26,7 @@
         <div class="hero-content"><!-- esta parte es la descripcion -->
             <h1>Bienvenido a nuestro Restaurante</h1>
             <p>Disfruta de una deliciosa comida en un ambiente acogedor.</p>
-            <a href="./reserva.html" class="btn" target="">Reservar mesa</a>
+            <a href="#reserva" class="btn" target="">Reservar mesa</a>
             
         </div>
         <section class="gallery-container">
@@ -66,23 +66,7 @@
         </script>
     </section>
 
-    <section id="about">
-        <div class="container1">
-
-            <div class="space1">
-                <h2>Sobre Nosotros</h2><!-- Sobre nosotros section -->
-                <p>¡Bienvenidos a nuestra deliciosa historia! En el corazón de la ciudad, se encuentra nuestro apasionado rincón de hamburguesas, un lugar donde los sueños más sabrosos se hacen realidad. Permítenos presentarte a nuestro vibrante equipo y compartir contigo nuestra pasión por la comida.
-                  En nuestro local de hamburguesas, nos esforzamos por ofrecerte una experiencia gastronómica 
-                  única que te haga salivar de antemano. Nuestro objetivo es despertar tus sentidos y conquistar
-                   tu paladar con cada bocado.</p>
-            </div>
-        
-            <img class="logox2" src="./Imagenes/LogoHamburguesas-removebg-preview.png" alt="Imagen 1">
-
-        </div>
-
-
-    </section>
+    
 
     <section id="menu"> <!-- menu de imagenes -->
         <div class="container">
@@ -235,6 +219,46 @@
                
 
     </section>
+
+
+    <section id="about">
+      <div class="container1">
+
+          <div class="space1">
+              <h2>Sobre Nosotros</h2><!-- Sobre nosotros section -->
+              <p>¡Bienvenidos a nuestra deliciosa historia! En el corazón de la ciudad, se encuentra nuestro apasionado rincón de hamburguesas, un lugar donde los sueños más sabrosos se hacen realidad. Permítenos presentarte a nuestro vibrante equipo y compartir contigo nuestra pasión por la comida.
+                En nuestro local de hamburguesas, nos esforzamos por ofrecerte una experiencia gastronómica 
+                única que te haga salivar de antemano. Nuestro objetivo es despertar tus sentidos y conquistar
+                 tu paladar con cada bocado.</p>
+          </div>
+      
+          <img class="logox2" src="./Imagenes/LogoHamburguesas-removebg-preview.png" alt="Imagen 1">
+
+      </div>
+
+    </section>
+
+
+  <section id="reserva">
+
+      <div class="conteiner_reserva">
+        <form action="procesar_reserva.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+      
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required>
+      
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora" required>
+      
+            <label for="cantidad">Cantidad de personas:</label>
+            <input type="number" id="cantidad" name="cantidad" min="1" required>
+      
+            <input class="btn-reservar" type="submit" value="Reservar">
+        </form>
+    </div>
+  </section>
 
 
 
